@@ -4,7 +4,8 @@ import ProjectCard from './ProjectCard';
 
 function App() {
   return (
-    <div className="App" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-10">
+        <div className="flex flex-wrap justify-center gap-8">
       <ProjectCard
         name="Construction Services App"
         screenshot="/images/tranquility.png"
@@ -43,6 +44,7 @@ function App() {
           challenges: "Making it mobile-responsive and accessible."
         }}
       />
+      </div>
     </div>
   );
 }

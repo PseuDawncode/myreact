@@ -1,25 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Card, Button, Modal } from 'react-bootstrap';
 
-const ProjectCard = ({ name, screenshot, github, techUsed, writeup }) => {
+function ProjectCard({ name, screenshot, github, techUsed, writeup }) {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+
   return (
-    <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden m-4 flex flex-col items-center text-center p-6">
-      <h2 className="text-2xl font-bold mb-4">{name}</h2>
-      <img src={screenshot} alt={`${name} screenshot`} className="w-full rounded-md mb-4" />
-      <p className="mb-2"><strong>Technologies Used:</strong> {techUsed}</p>
-      <p className="mb-2"><strong>What it does:</strong> {writeup.what}</p>
-      <p className="mb-2"><strong>What I learned:</strong> {writeup.learned}</p>
-      {writeup.role && <p className="mb-2"><strong>My Role:</strong> {writeup.role}</p>}
-      <p className="mb-4"><strong>Challenges solved:</strong> {writeup.challenges}</p>
-      <a 
-      href={github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline mt-auto"
-      >
-        View Code on GitHub
-    </a>
-    </div>
+    <>
+      <Card className="shadow mb-4" style={{ width: '18rem' }}>
+        <Card.Img variant="top" src={screenshot} alt={`${name} screenshot`} />
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>
+            <strong>Tech Used:</strong> {techUsed}
+          </Card.Text>
+          <div className="d-flex justify-content-between">
+            <Button variant="primary" onClick={handleShow}>Details</Button>
+            <Button variant="secondary" href={github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </Button>
+          </div>
+        </Card.Body>
+      </Card>
+
+      <Modal show={showModal} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h5>What is it?</h5>
+          <p>{writeup.what}</p>
+          
+          <h5>What I learned</h5>
+          <p>{writeup.learned}</p>
+          
+          <h5>My role</h5>
+          <p>{writeup.role}</p>
+          
+          <h5>Challenges</h5>
+          <p>{writeup.challenges}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
-};
+}
 
 export default ProjectCard;

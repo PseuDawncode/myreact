@@ -21,7 +21,7 @@ function App() {
           <Col md={6} className="text-center">
             <img
               src="/images/Dawn.png"
-              alt="Landing illustration"
+              alt="Landing Page- Dawn's Avatar"
               style={{ 
                 maxWidth: '100%', 
                 height: 'auto' 

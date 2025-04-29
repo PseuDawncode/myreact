@@ -7,19 +7,23 @@ function App() {
   return (
     <>
     <NavigationBar />
-    <div id="home" className="py-5 bg-light">
-        {/* Home section could go here */}
-      </div>
-      
-      <div id="about" className="py-5" style={{ backgroundColor: '#f0f0f0' }}>
-        <Container fluid className="px-4">
-          <Row className="justify-content-center mb-4">
-            <Col xs={12} className="text-center">
-              <h1 className="display-4 mb-5">About Me</h1>
-              {/* About me content would go here */}
-              <p className="lead">
-                Web developer passionate about creating responsive and user-friendly applications.
-              </p>
+    <div id="home" className="py-5 text-white" bg="dark" variant="dark">
+  <Container fluid className="d-flex align-items-center justify-content-center px-4">
+    <Row className="align-items-center">
+      <Col md={6} className="text-center text-md-start mb-4 mb-md-0">
+        <p className="lead text-light text-uppercase">Hi, I am Dawn, I design</p>
+        <h1 className="display-3 fw-bold text-warning text-uppercase">Responsive & Friendly Website</h1>
+        <p className="lead text-light text-uppercase">For your business!</p>
+        <p className="text-light">
+          A fullstack developer that solves your design and functionality of your website and app.
+        </p>
+      </Col>
+      <Col md={6} className="text-center">
+        <img
+          src="/images/Dawn.png"
+          alt="Landing illustration"
+          style={{ maxWidth: '100%', height: 'auto' }}
+        />
             </Col>
           </Row>
         </Container>

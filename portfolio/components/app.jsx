@@ -28,6 +28,26 @@ function App() {
           </Row>
         </Container>
       </div>
+
+      <div id="about" className="py-5" style={{ backgroundColor: '#f0f0f0' }}>
+  <Container fluid className="px-4">
+    <Row className="align-items-center">
+      <Col md={6}>
+        <h1 className="display-4 mb-4">About Me</h1>
+        <p className="lead">
+          Web developer passionate about creating responsive and user-friendly applications.
+        </p>
+      </Col>
+      <Col md={6} className="text-center">
+        <img
+          src="/images/Aboutme.png"
+          alt="My photo"
+          style={{ maxWidth: '80%', borderRadius: '20px', boxShadow: '0 4px 10px rgba(0,0,0,0.2)' }}
+        />
+      </Col>
+    </Row>
+  </Container>
+</div>
       
       <div id="allprojects" className="py-5 bg-light">
     <div className="py-5 bg-light">

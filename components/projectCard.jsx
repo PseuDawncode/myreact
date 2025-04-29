@@ -9,7 +9,7 @@ function ProjectCard({ name, screenshot, github, techUsed, writeup }) {
 
   return (
     <>
-      <Card className="shadow mb-4" style={{ width: '25rem' }}>
+      <Card className="shadow mb-4" style={{ width: '30rem' }}>
         <Card.Img variant="top" src={screenshot} alt={`${name} screenshot`} />
         <Card.Body>
           <Card.Title>{name}</Card.Title>

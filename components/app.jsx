@@ -8,7 +8,7 @@ function App() {
       <Container>
         <Row className="justify-content-center">
           <Col xs={12} className="text-center mb-4">
-            <h1>My Projects</h1>
+            <h1>Projects Feature</h1>
           </Col>
         </Row>
         <Row className="justify-content-center g-4">

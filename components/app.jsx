@@ -5,7 +5,7 @@ import ProjectCard from './projectCard';
 function App() {
   return (
     <div className="py-5 bg-light">
-      <Container>
+      <Container fluid className="py-4">
         <Row className="justify-content-center">
           <Col xs={12} className="text-center mb-4">
             <h1>Projects Feature</h1>

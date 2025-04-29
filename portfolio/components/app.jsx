@@ -1,9 +1,31 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './projectCard';
+import NavigationBar from './navigationBar';
 
 function App() {
   return (
+    <>
+    <NavigationBar />
+    <div id="home" className="py-5 bg-light">
+        {/* Home section could go here */}
+      </div>
+      
+      <div id="about" className="py-5" style={{ backgroundColor: '#f0f0f0' }}>
+        <Container fluid className="px-4">
+          <Row className="justify-content-center mb-4">
+            <Col xs={12} className="text-center">
+              <h1 className="display-4 mb-5">About Me</h1>
+              {/* About me content would go here */}
+              <p className="lead">
+                Web developer passionate about creating responsive and user-friendly applications.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      
+      <div id="allprojects" className="py-5 bg-light">
     <div className="py-5 bg-light">
       <Container fluid className="py-4">
         <Row className="justify-content-center">
@@ -57,6 +79,8 @@ function App() {
         </Row>
       </Container>
     </div>
+    </div>
+    </>
   );
 }
 

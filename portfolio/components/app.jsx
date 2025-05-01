@@ -12,7 +12,7 @@ function App() {
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start mb-4 mb-md-0">
             <p className="lead text-light text-uppercase">Hi, I am Dawn, I design</p>
-            <h1 className="display-3 fw-bold text-warning text-uppercase">Responsive & Friendly Websites</h1>
+            <h1 className="display-3 fw-bold text-warning text-uppercase">Responsive & User-Friendly Websites</h1>
             <p className="lead text-light text-uppercase">For your business!</p>
             <p className="text-light">
               A fullstack developer that solves your design and functionality of your website and app.

@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
 
-function NavigationBar() {
+function NavigationBar({ onSearch }) {
+    const [query, setQuery] = useState('');
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      onSearch(query);
+    };
   return (
     <Navbar expand="lg" bg="dark" variant="dark" className="py-3" sticky="top">
       <Container>
@@ -20,14 +26,16 @@ function NavigationBar() {
             </NavDropdown>
             <Nav.Link href="#contact" className="mx-2">Reach Out</Nav.Link>
           </Nav>
-          <Form className="d-flex ms-3">
+          <Form className="d-flex ms-3" onSubmit={handleSubmit}>
             <FormControl
                 type="search"
                 placeholder="programming language.."
                 className="me-2"
                 aria-label="Search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
             />
-            <Button variant="outline-light">Search</Button>
+            <Button variant="outline-light" type="submit">Search</Button>
             </Form>
         </Navbar.Collapse>
       </Container>

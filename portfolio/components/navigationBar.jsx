@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, NavDropdown, Container, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
 
 function NavigationBar({ onSearch }) {
     const [query, setQuery] = useState('');
@@ -17,15 +17,21 @@ function NavigationBar({ onSearch }) {
           <Nav className="ms-auto align-items-center">
             <Nav.Link href="#home" className="mx-2">Home</Nav.Link>
             <Nav.Link href="#about" className="mx-2">About Me</Nav.Link>
-            <NavDropdown title="Projects" id="projects-dropdown" className="mx-2">
-              <NavDropdown.Item href="#construction">Construction Services App</NavDropdown.Item>
-              <NavDropdown.Item href="#booklist">Book List App</NavDropdown.Item>
-              <NavDropdown.Item href="#tattoo">Tattoo Website</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#allprojects">All Projects</NavDropdown.Item>
-            </NavDropdown>
             <Nav.Link href="#contact" className="mx-2">Reach Out</Nav.Link>
           </Nav>
+          <Button 
+            className="mx-3"
+            href="projects.jsx"
+            style={{ backgroundColor: '#088F8F', borderColor: '#088F8F'}}
+            onMouseOver={(e) => {
+              e.target.style.backgroundColor = '#066b6b';
+              e.target.style.borderColor = '#066b6b';
+            }}
+            onMouseOut={(e) => {
+              e.target.style.backgroundColor = '#088F8F';
+              e.target.style.borderColor = '#088F8F';
+            }}
+          >Projects</Button>
           <Form className="d-flex ms-3" onSubmit={handleSubmit}>
             <FormControl
                 type="search"

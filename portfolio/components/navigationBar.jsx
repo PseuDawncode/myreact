@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function NavigationBar({ onSearch }) {
     const [query, setQuery] = useState('');
@@ -19,19 +20,20 @@ function NavigationBar({ onSearch }) {
             <Nav.Link href="#about" className="mx-2">About Me</Nav.Link>
             <Nav.Link href="#contact" className="mx-2">Reach Out</Nav.Link>
           </Nav>
-          <Button 
-            className="mx-3"
-            href="projects.jsx"
-            style={{ backgroundColor: '#088F8F', borderColor: '#088F8F'}}
-            onMouseOver={(e) => {
-              e.target.style.backgroundColor = '#066b6b';
-              e.target.style.borderColor = '#066b6b';
-            }}
-            onMouseOut={(e) => {
-              e.target.style.backgroundColor = '#088F8F';
-              e.target.style.borderColor = '#088F8F';
-            }}
-          >Projects</Button>
+          <Link to="projects">
+            <Button 
+              className="mx-3"
+              style={{ backgroundColor: '#088F8F', borderColor: '#088F8F' }}
+              onMouseOver={(e) => {
+                e.target.style.backgroundColor = '#066b6b';
+                e.target.style.borderColor = '#066b6b';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.backgroundColor = '#088F8F';
+                e.target.style.borderColor = '#088F8F';
+              }}
+            >Projects</Button>
+          </Link>
           <Form className="d-flex ms-3" onSubmit={handleSubmit}>
             <FormControl
                 type="search"

@@ -21,7 +21,7 @@ function NavigationBar({ onSearch }) {
             <Nav.Link href="#about" className="mx-2">About Me</Nav.Link>
             <Nav.Link href="#contact" className="mx-2">Reach Out</Nav.Link>
           </Nav>
-          <Link to="components/projects">
+          <Link to="/projects">
             <Button 
               className="mx-3"
               style={{ backgroundColor: '#088F8F', borderColor: '#088F8F' }}

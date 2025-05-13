@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './projectCard';
 import NavigationBar from './navigationBar';
-import projectData from './projects';
+import projectData from './projectData';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');

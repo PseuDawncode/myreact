@@ -8,7 +8,7 @@ import projectData from './projectData';
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filteredProjects = projectData.filter(project =>
+  const filteredProjects = projectData.filter(project => 
     project.techUsed.toLowerCase().includes(searchQuery.toLowerCase())
   );
   return (

@@ -36,6 +36,78 @@ const projectData = [
         role: "Group project",
         challenges: "Making it mobile-responsive and accessible.",
       }
+    },
+    {
+      name: "Tattoo Website",
+      screenshot: "/images/tattooPage.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+    {
+      name: "Tattoo Website",
+      screenshot: "/images/tattooPage.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+    {
+      name: "Tattoo Website",
+      screenshot: "/images/tattooPage.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+    {
+      name: "Tattoo Website",
+      screenshot: "/images/tattooPage.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+    {
+      name: "Tattoo Website",
+      screenshot: "/images/tattooPage.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+    {
+      name: "Tattoo Website",
+      screenshot: "/images/tattooPage.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
     }
   ];
   

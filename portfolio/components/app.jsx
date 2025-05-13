@@ -1,19 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import NavigationBar from './navigationBar';
 import Home from './home'; 
 import AllProjects from './allProjects';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('');
   return (
-    <Router>
-      <NavigationBar />
+    <>
+      <NavigationBar onSearch={setSearchQuery} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<AllProjects />} />
-        <Route path="/projectcard" element={<ProjectCard />} />
-        <Route path="/projectData" element={<projectData />} />
+        <Route path="/" element={<Home searchQuery={searchQuery} />} />
+        <Route path="/components/projects" element={<AllProjects />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

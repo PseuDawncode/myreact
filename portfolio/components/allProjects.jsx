@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import ProjectCard from './projectCard';
+import projectData from './projectData';
 
 const projects = [
   { name: 'Construction Services App', techUsed: 'HTML, CSS, JavaScript', img: '/images/tranquility.png' },
@@ -14,24 +16,23 @@ const projects = [
 ];
 
 function AllProjects() {
-  return (
-    <Container className="py-5">
-      <h1 className="text-center mb-5">All Projects</h1>
-      <Row className="g-4">
-        {projects.map((project, idx) => (
-          <Col md={4} key={idx}>
-            <Card className="h-100">
-              <Card.Img variant="top" src={project.img} />
-              <Card.Body>
-                <Card.Title>{project.name}</Card.Title>
-                <Card.Text><strong>Tech Used:</strong> {project.techUsed}</Card.Text>
-                <Button variant="primary" href="#" disabled>Details</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    return (
+      <Container className="py-5">
+        <h1 className="text-center mb-5">All Projects</h1>
+        <Row className="g-4">
+          {projectData.map((project, index) => (
+            <Col md={4} key={index}>
+              <ProjectCard
+                name={project.name}
+                screenshot={project.screenshot}
+                github={project.github}
+                techUsed={project.techUsed}
+                writeup={project.writeup}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
   );
 }
 

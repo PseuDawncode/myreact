@@ -35,5 +35,5 @@ function AllProjects() {
       </Container>
   );
 }
-
+ 
 export default AllProjects;

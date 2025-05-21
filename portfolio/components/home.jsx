@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './projectCard';
-import NavigationBar from './navigationBar';
+
 import projectData from './projectData';
 
 
@@ -13,7 +13,7 @@ function App() {
   );
   return (
     <>
-    <NavigationBar onSearch={setSearchQuery}/>
+    
     <div id="home" className="py-5 text-white" bg="dark" variant="dark">
       <Container fluid className="d-flex align-items-center justify-content-center px-4">
         <Row className="align-items-center">

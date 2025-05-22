@@ -7,7 +7,7 @@ const projectData = [
     name: 'Construction Services App', 
     techUsed: 'HTML, CSS, JavaScript', 
     screenshot: '/images/tranquility.png',
-    github: 'https://github.com/yourusername/construction-app', // Add your actual GitHub links
+    github: 'https://github.com/yourusername/construction-app',
     writeup: 'A comprehensive construction services application built with vanilla JavaScript.'
   },
   { 

@@ -12,7 +12,7 @@ function App() {
       <NavigationBar onSearch={setSearchQuery} />
       <Routes>
         <Route path="/" element={<Home searchQuery={searchQuery} />} />
-        <Route path="/allProjects" element={<AllProjects searchQuery={searchQuery} />} />
+        <Route path="/projects" element={<AllProjects searchQuery={searchQuery} />} />
       </Routes>
     </>
     

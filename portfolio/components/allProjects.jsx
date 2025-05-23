@@ -4,26 +4,42 @@ import ProjectCard from './projectCard';
 
 const projectData = [
   { 
-    name: 'Construction Services App', 
-    techUsed: 'HTML, CSS, JavaScript', 
-    screenshot: '/images/tranquility.png',
-    github: 'https://github.com/yourusername/construction-app',
-    writeup: 'A comprehensive construction services application built with vanilla JavaScript.'
+      name: "Construction Services App",
+      screenshot: "/images/tranquility.png",
+      github: "https://github.com/PseuDawncode/My-Project",
+      techUsed: "HTML, CSS, and JavaScript",
+      writeup: {
+        what: "A web app that shows available services for the clients and simply can book an appointment.",
+        learned: "My very first time to use JavaScript for the services—dropdown button.",
+        role: "Solo project",
+        challenges: "Handling form submission validation.",
+  }
+  
   },
-  { 
-    name: 'Book List App', 
-    techUsed: 'HTML, JavaScript, Bootstrap', 
-    screenshot: '/images/booklist.png',
-    github: 'https://github.com/yourusername/book-list-app',
-    writeup: 'A dynamic book management application using Bootstrap for responsive design.'
-  },
-  { 
-    name: 'Tattoo Website', 
-    techUsed: 'HTML, CSS', 
-    screenshot: '/images/tattoo.png',
-    github: 'https://github.com/yourusername/tattoo-website',
-    writeup: 'A modern tattoo parlor website showcasing artistic designs and services.'
-  },
+    {
+      name: "Book List App",
+      screenshot: "/images/BookListApp.png",
+      github: "https://github.com/PseuDawncode/LibraryArray",
+      techUsed: "HTML, JavaScript, and Bootstrap",
+      writeup: {
+        what: "A simple book list app to add and delete books. Simply can also mark the book as Read or Unread",
+        learned: "How to store data in a Local Storage",
+        role: "Solo project",
+        challenges: "To filter the Read and Unread books to show.",
+      }
+    },
+    {
+      name: "Tattoo Website",
+      screenshot: "/images/tattooPage.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
   { 
     name: 'E-Commerce App', 
     techUsed: 'React, Bootstrap', 

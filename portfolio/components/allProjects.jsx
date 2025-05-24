@@ -1,6 +1,6 @@
-
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './projectCard';
+
 
 const projectData = [
   { 
@@ -40,57 +40,52 @@ const projectData = [
         challenges: "Making it mobile-responsive and accessible.",
       }
     },
-  { 
-    name: 'E-Commerce App', 
-    techUsed: 'React, Bootstrap', 
-    screenshot: '/images/ecommerce.png',
-    github: 'https://github.com/yourusername/ecommerce-app',
-    writeup: 'A full-featured e-commerce application built with React and Bootstrap.'
-  },
-  { 
-    name: 'Weather App', 
-    techUsed: 'JavaScript, API, CSS', 
-    screenshot: '/images/weather.png',
-    github: 'https://github.com/yourusername/weather-app',
-    writeup: 'A weather forecasting app that integrates with external weather APIs.'
-  },
-  { 
-    name: 'ToDo App', 
-    techUsed: 'React, LocalStorage', 
-    screenshot: '/images/todo.png',
-    github: 'https://github.com/yourusername/todo-app',
-    writeup: 'A task management application with local storage persistence.'
-  },
-  { 
-    name: 'Blog Page', 
-    techUsed: 'HTML, CSS, JS', 
-    screenshot: '/images/blog.png',
-    github: 'https://github.com/yourusername/blog-page',
-    writeup: 'A clean and responsive blog interface built with vanilla web technologies.'
-  },
-  { 
-    name: 'Recipe Finder', 
-    techUsed: 'React, API, Bootstrap', 
-    screenshot: '/images/recipe.png',
-    github: 'https://github.com/yourusername/recipe-finder',
-    writeup: 'A recipe discovery app that fetches data from cooking APIs.'
-  },
-  { 
-    name: 'Fitness Tracker', 
-    techUsed: 'React, Chart.js', 
-    screenshot: '/images/fitness.png',
-    github: 'https://github.com/yourusername/fitness-tracker',
-    writeup: 'A fitness tracking application with data visualization using Chart.js.'
-  },
+    {
+      name: "Minigame",
+      screenshot: "/images/minigames.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "React, JavaScript, CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+    {
+      name: "Weather App",
+      screenshot: "/images/weather.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "API, React, TypeScript",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+    {
+      name: "Recipe Finder App",
+      screenshot: "/images/recipe.png",
+      github: "https://github.com/lZ3R0l/tattoo-project",
+      techUsed: "HTML and CSS",
+      writeup: {
+        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        learned: "Teamwork, Communication, and Collaboration",
+        role: "Group project",
+        challenges: "Making it mobile-responsive and accessible.",
+      }
+    },
+
 ];
 
 function AllProjects() {
     return (
       <Container className="py-5">
         <h1 className="text-center mb-5">All Projects</h1>
-        <Row className="g-4">
+        <Row className="g-4 justify-content-center">
           {projectData.map((project, index) => (
-            <Col md={4} key={index}>
+            <Col xs={12} sm={6} md={4} lg={4} xl={4} key={index} className="d-flex justify-content-center">
               <ProjectCard
                 name={project.name}
                 screenshot={project.screenshot}

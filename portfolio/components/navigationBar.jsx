@@ -17,7 +17,7 @@ function NavigationBar({ onSearch }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            <Nav.Link href="#home" className="mx-2">Home</Nav.Link>
+            <Nav.Link as={Link} to="/" className="mx-2">Home</Nav.Link>
             <Nav.Link href="#about" className="mx-2">About Me</Nav.Link>
             <Nav.Link href="#contact" className="mx-2">Reach Out</Nav.Link>
           </Nav>

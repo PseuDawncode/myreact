@@ -41,39 +41,39 @@ const projectData = [
       }
     },
     {
-      name: "Minigame",
+      name: "Minigames",
       screenshot: "/images/minigames.png",
-      github: "https://github.com/lZ3R0l/tattoo-project",
-      techUsed: "React, JavaScript, CSS",
+      github: "https://github.com/PseuDawncode/API2.0",
+      techUsed: "API, React, JavaScript, CSS",
       writeup: {
-        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
-        learned: "Teamwork, Communication, and Collaboration",
-        role: "Group project",
-        challenges: "Making it mobile-responsive and accessible.",
+        what: "A game app where the users or the players can choose from the two games which are the history game and language game.",
+        learned: "I've learned how API works!",
+        role: "Solo project",
+        challenges: "more challenging to use API.",
       }
     },
     {
       name: "Weather App",
       screenshot: "/images/weather.png",
-      github: "https://github.com/lZ3R0l/tattoo-project",
-      techUsed: "API, React, TypeScript",
+      github: "https://github.com/PseuDawncode/local-insights",
+      techUsed: "API, React, TypeScript, TailwindCSS",
       writeup: {
-        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
+        what: "A website that perfect for the travellers to check the weather in specific places, to check the traffic, money converter",
         learned: "Teamwork, Communication, and Collaboration",
         role: "Group project",
-        challenges: "Making it mobile-responsive and accessible.",
+        challenges: "It's very challenges to use Realtime-API.",
       }
     },
     {
       name: "Recipe Finder App",
       screenshot: "/images/recipe.png",
-      github: "https://github.com/lZ3R0l/tattoo-project",
+      github: "https://github.com/PseuDawncode/Recipe",
       techUsed: "HTML and CSS",
       writeup: {
-        what: "A web app for tattoo client that simply shows tattoo sample—images and where they can also book an appointment.",
-        learned: "Teamwork, Communication, and Collaboration",
-        role: "Group project",
-        challenges: "Making it mobile-responsive and accessible.",
+        what: "A web app for users who love cooking or explores new dish. Not just for the cooking-lover, but also for the user who wants to practice on how to cook better.",
+        learned: "to use Search Engine Optimization(SEO)",
+        role: "Solo project",
+        challenges: "Making it mobile-responsive and accessible with normalize.css and SEO",
       }
     },
 
